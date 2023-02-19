@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-I.
-DEPS = common.h debug.h
+CFLAGS=-I. -g3
+DEPS = common.h debug.h chunk.h
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
