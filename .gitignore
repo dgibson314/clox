@@ -1,3 +1,4 @@
 *.swp
 main
 tags
+.gdb_history
