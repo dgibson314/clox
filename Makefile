@@ -1,3 +1,5 @@
+CFLAGS = -g -O0 -DDEBUG
+
 TARGET_EXEC := main
 
 BUILD_DIR := ./build
