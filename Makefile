@@ -1,7 +1,7 @@
 TARGET_EXEC := main
 
 BUILD_DIR := ./build
-SRC_DIR := ./src
+SRC_DIRS := ./src
 
 # Find all the C files we want to compile
 SRCS := $(shell find $(SRC_DIRS) -name '*.c')
