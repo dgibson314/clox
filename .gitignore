@@ -1,3 +1,4 @@
 build/*
 *.swp
 tags
+.gdb_history
