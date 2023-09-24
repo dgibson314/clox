@@ -22,7 +22,16 @@ typedef struct {
     Table globals;
     Table strings;
     ObjUpvalue *open_upvalues;
+    /* Running total of number of bytes of managed memory the VM has allocated */
+    size_t bytes_allocated;
+    /* Threshold that triggers the next GC collection */
+    size_t next_gc;
     Obj *objects;
+
+    /* Gray stack for garbage collection */
+    int gray_count;
+    int gray_capacity;
+    Obj **gray_stack;
 } VM;
 
 typedef enum {
