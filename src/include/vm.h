@@ -21,6 +21,7 @@ typedef struct {
     Value *stack_top;
     Table globals;
     Table strings;
+    ObjString *init_string;
     ObjUpvalue *open_upvalues;
     /* Running total of number of bytes of managed memory the VM has allocated */
     size_t bytes_allocated;
